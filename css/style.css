@@ -27,6 +27,15 @@ p {
 
 }
 
+address a{
+    color: #222222;
+    text-decoration: none;
+}
+
+
+address a:hover{
+    color: #970707;
+}
 /* NEW */
 
 .carousel-control-next-icon,
