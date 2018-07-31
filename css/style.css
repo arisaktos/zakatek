@@ -2,7 +2,7 @@ body {
     margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    color: #777777;
+    color: #4a4a4a;
     text-align: left;
     font-size: 1rem;
     line-height: 2;
@@ -14,7 +14,7 @@ p {
 }
 
 .nav-bg {
-    background: rgba(151, 7, 7, 0.9);
+    background: rgba(10, 69, 124, 0.9);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 
@@ -31,6 +31,8 @@ address a{
     color: #222222;
     text-decoration: none;
 }
+
+
 
 
 address a:hover{
@@ -68,6 +70,11 @@ address a:hover{
     width: 90%;
     border-radius: 50%;
     margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.attractions img:hover{
+    border-radius: 0px;
 }
 
 .extra-spacer {
@@ -148,6 +155,7 @@ h2 {
 
 h3 {
     font-size: 2rem;
+    color: #0a457c;
 }
 
 .mini-row {
@@ -234,10 +242,10 @@ textarea {
 
 
 input[type="submit"] {
-    background-color: #970707;
+    background-color: #0a457c;
     width: 300px;
     color: #fff;
-    -webkit-transition: all 0.7s;
+    -webkit-transition: all 0.4s;
     transition: all 0.7s;
     text-align: center;
     font-size: 1.1rem;
@@ -245,14 +253,22 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #fff;
-    color: #970707;
+    background-color: #2570b5;
     cursor: pointer;
 }
 
 form {
     margin-top: 30px;
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before {
+    width: 70%;
+}
+
 
 
 
@@ -325,6 +341,7 @@ footer img {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/header/zakatek-top-banner-mobile.jpg');
 
     }
+    
 
     .mobile-margin {
         margin-bottom: 40px;
@@ -359,11 +376,11 @@ footer img {
 
 }
 
-@media (min-width: 575px) 
-{.navbar-light .navbar-nav .nav-link:hover {
-    color: #fff;
+
+@media (max-width: 600px) {
+    
+    .navbar-light .navbar-nav .nav-link:hover::before {
+    width: 0%;
 }
 
-.navbar-light .navbar-nav .nav-link:hover::before {
-    width: 70%;
-}}
+}
